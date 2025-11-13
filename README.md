@@ -1,6 +1,15 @@
-# SmartATS Frontend (Minimal)
+# SmartATS Backend
 
-This is a minimal React + Tailwind skeleton.
-Install dependencies and run with a typical React toolchain (create-react-app or Vite).
+Environment: Node 18+, MongoDB
 
-Important: set REACT_APP_API_URL to point to your backend, e.g. http://localhost:5000
+1. copy .env.example to .env and fill values
+2. npm install
+3. npm run dev
+
+APIs:
+- POST /api/auth/register
+- POST /api/auth/login
+- GET/POST/PUT/DELETE /api/jobs
+- POST /api/applications/:jobId/apply (multipart form-data file 'resume')
+- GET /api/applications
+- POST /api/parser/parse
